@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Culsoda by Celemourn</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Culsoda</h1>
+        <p class="header">Port of the Livermore Solver for Ordinary Differential equations with Automatic switching for stiff and non-stiff problems (LSODA), to the NVIDIA C for CUDA API.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/Celemourn/cuLsoda/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/Celemourn/cuLsoda/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/Celemourn/cuLsoda">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/Celemourn">Celemourn</a></p>
+
+
+      </header>
+      <section>
+        <h1>CuLsoda</h1>
+
+<h3>Overview</h3>
+
+<p>CuLsoda is a port from fortran of the Livermore Solver for Ordinary Differential Equations with Automatic Switching and Double Precision (DLSODA) to nVidia's CUDA framework.  </p>
+
+<h3>Current State</h3>
+
+<p>CuLsoda is the result of a summer internship back in 2009, and after being brought into a barely functional state as proof of concept, the internship ended and the code hasn't been touched since.  As I've been contacted by several individuals interested in the code over the last few years, I am posting it to GitHub in the hopes that it will be picked up and that development will recommence.</p>
+
+<h5>Tasks</h5>
+
+<ul>
+<li>Get rid of GOTO statements.</li>
+<li>Optimize for CUDA.</li>
+<li>Comment Everything.</li>
+<li>Possibly port to CUDA C++?</li>
+<li>Branch and create an OpenCL version.</li>
+</ul><h4>Files</h4>
+
+<p>This repository currently includes three subfolders in the Benchmarks folder. Each of these represents a benchmark that I ran for my paper.  The main code is taken from the multigpu folder and it is assumed (perhaps unwisely) that this is the most recent and feature complete version of the code.  To my knowledge, if properly compiled, the code in the individual benchmark folders ought to work properly.</p>
+
+<h3>Contact</h3>
+
+<p>Anyone with questions is welcome to contact me at Celemourn@&lt;insert popular free email provider whose name is five letters, begins with G and ends with L here&gt;.com</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
